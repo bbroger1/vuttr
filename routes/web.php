@@ -29,7 +29,7 @@ $router->group(['prefix' => 'api', 'middleware' => 'auth'], function () use ($ro
 
     //routes para logout, dados do usuário autenticado e logout
     $router->post('logout', 'AuthController@logout');
-    $router->patch('refresh', 'AuthController@refresh');
+    $router->post('refresh', 'AuthController@refresh');
     $router->post('me', 'AuthController@me');
 });
 
